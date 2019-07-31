@@ -3,27 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		54A9D90B22F1E5E3008760DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A9D90A22F1E5E3008760DE /* AppDelegate.swift */; };
 		54A9D90D22F1E5E3008760DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A9D90C22F1E5E3008760DE /* SceneDelegate.swift */; };
-		54A9D90F22F1E5E3008760DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A9D90E22F1E5E3008760DE /* ViewController.swift */; };
+		54A9D90F22F1E5E3008760DE /* CanvasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A9D90E22F1E5E3008760DE /* CanvasViewController.swift */; };
 		54A9D91222F1E5E3008760DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54A9D91022F1E5E3008760DE /* Main.storyboard */; };
 		54A9D91422F1E5E4008760DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54A9D91322F1E5E4008760DE /* Assets.xcassets */; };
 		54A9D91722F1E5E4008760DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54A9D91522F1E5E4008760DE /* LaunchScreen.storyboard */; };
+		54A9D92222F1EA73008760DE /* Canvas in Frameworks */ = {isa = PBXBuildFile; productRef = 54A9D92122F1EA73008760DE /* Canvas */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		54A9D90722F1E5E3008760DE /* Canvas-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Canvas-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54A9D90A22F1E5E3008760DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54A9D90C22F1E5E3008760DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		54A9D90E22F1E5E3008760DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		54A9D90E22F1E5E3008760DE /* CanvasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasViewController.swift; sourceTree = "<group>"; };
 		54A9D91122F1E5E3008760DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		54A9D91322F1E5E4008760DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54A9D91622F1E5E4008760DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		54A9D91822F1E5E4008760DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54A9D91E22F1E5F2008760DE /* Canvas */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Canvas; path = ../Canvas; sourceTree = "<group>"; };
+		54A9D91F22F1E606008760DE /* Canvas-Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Canvas-Demo.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54A9D92222F1EA73008760DE /* Canvas in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +44,10 @@
 		54A9D8FE22F1E5E3008760DE = {
 			isa = PBXGroup;
 			children = (
+				54A9D91E22F1E5F2008760DE /* Canvas */,
 				54A9D90922F1E5E3008760DE /* Canvas-Demo */,
 				54A9D90822F1E5E3008760DE /* Products */,
+				54A9D92022F1EA73008760DE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +62,23 @@
 		54A9D90922F1E5E3008760DE /* Canvas-Demo */ = {
 			isa = PBXGroup;
 			children = (
+				54A9D91F22F1E606008760DE /* Canvas-Demo.entitlements */,
 				54A9D90A22F1E5E3008760DE /* AppDelegate.swift */,
 				54A9D90C22F1E5E3008760DE /* SceneDelegate.swift */,
-				54A9D90E22F1E5E3008760DE /* ViewController.swift */,
+				54A9D90E22F1E5E3008760DE /* CanvasViewController.swift */,
 				54A9D91022F1E5E3008760DE /* Main.storyboard */,
 				54A9D91322F1E5E4008760DE /* Assets.xcassets */,
 				54A9D91522F1E5E4008760DE /* LaunchScreen.storyboard */,
 				54A9D91822F1E5E4008760DE /* Info.plist */,
 			);
 			path = "Canvas-Demo";
+			sourceTree = "<group>";
+		};
+		54A9D92022F1EA73008760DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +97,9 @@
 			dependencies = (
 			);
 			name = "Canvas-Demo";
+			packageProductDependencies = (
+				54A9D92122F1EA73008760DE /* Canvas */,
+			);
 			productName = "Canvas-Demo";
 			productReference = 54A9D90722F1E5E3008760DE /* Canvas-Demo.app */;
 			productType = "com.apple.product-type.application";
@@ -138,7 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54A9D90F22F1E5E3008760DE /* ViewController.swift in Sources */,
+				54A9D90F22F1E5E3008760DE /* CanvasViewController.swift in Sources */,
 				54A9D90B22F1E5E3008760DE /* AppDelegate.swift in Sources */,
 				54A9D90D22F1E5E3008760DE /* SceneDelegate.swift in Sources */,
 			);
@@ -284,7 +301,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Canvas-Demo/Canvas-Demo.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = V2CWYL9AN8;
 				INFOPLIST_FILE = "Canvas-Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -293,6 +312,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.152percent.Canvas-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -302,7 +322,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Canvas-Demo/Canvas-Demo.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = V2CWYL9AN8;
 				INFOPLIST_FILE = "Canvas-Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -311,6 +333,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.152percent.Canvas-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -338,6 +361,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		54A9D92122F1EA73008760DE /* Canvas */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Canvas;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 54A9D8FF22F1E5E3008760DE /* Project object */;
 }
